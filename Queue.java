@@ -2,16 +2,15 @@ package ru.geekbrains.MyPractice;
 
 public interface Queue {
 
-    void insert(int value); // метод для добавления элемента в очередь
+    int removeFirst(); // метод удаления элемента слева
 
-    int remove();  // метод для удаления элемента из очереди
+    void insertLast(int value); // метод добавления элемента справа
 
     int getSize(); // метод для получения размера очереди
 
     boolean isEmpty(); // метод для проверки очереди на пустоту
 
     boolean isFull();  // метод для проверки очереди на заполненность
-
 
 
 }
